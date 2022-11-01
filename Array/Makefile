@@ -1,15 +1,15 @@
 CC = gcc
 FLAGS = -Wall -Werror -Wextra
 
-all: Array run
+all: array run
 
-Array:
-	@${CC} ${FLAGS} Array.c func.c -o Array
+array:
+	@${CC} ${FLAGS} main.c func.c -o array
 
 clean:
-	@rm -rf *.out Array
+	@rm -rf *.out array
 
 run:
-	@./Array
+	@./array
 
-rebuild: clean Array run
+rebuild: clean array run
