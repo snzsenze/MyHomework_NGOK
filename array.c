@@ -1,4 +1,4 @@
-#include "func.h"
+#include "array.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -60,13 +60,11 @@ void resereserve_array(int *array, const unsigned int size)
     }
 }
 
-int comparsion_array(const int array[], const unsigned int PUP, const int double_array[], const unsigned int PUPU){
+int comparsion_array(const int arraFirst[], const unsigned int sizeFirst, const int arraySecond[], const unsigned int sizeSecond){
     int res = 1;
-
-    if (PUP == PUPU) {
-
-        for (unsigned int i = 0; i < PUP; i++)
-            if (array[i] != double_array[i]) {
+    if (sizeFirst == sizeSecond) {
+        for (unsigned int i = 0; i < sizeFirst; i++)
+            if (arraFirst[i] != arraySecond[i]) {
                 res = 0;
                 break;
             }
