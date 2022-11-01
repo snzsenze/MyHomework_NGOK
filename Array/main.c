@@ -1,4 +1,4 @@
-#include "func.h"
+#include "array.h"
 #include <stdio.h>
 #define PUP 10
 #define PUPU 10
