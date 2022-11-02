@@ -1,6 +1,32 @@
 #include "func.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
+void array_swap(int *array, const unsigned int size, int *double_array,
+                const unsigned int double_size)
+{
+
+    if (size == double_size) {
+        int tmp = array[0];
+
+        for (unsigned int i = 0; i < size; ++i) {
+            array[i] = double_array[i];
+            double_array[i] = tmp;
+            tmp = array[i + 1];
+        }
+    }
+}
+
+void fill_random(int *array, const unsigned int size)
+{
+
+    srand(time(NULL));
+    for (unsigned int i = 0; i < size; i++) {
+
+        array[i] = 0 + rand() % (size - 0 + 1);
+    }
+}
 
 void set_array(int *array, const unsigned int size)
 {
@@ -110,8 +136,8 @@ int binary_search(int array[], int size, int number)
     int min_i = 0;         // нашли минимальное
     int max_i = size;      // максимальное
     int mid_i = max_i / 2; // находим центр
-
     int res = -1;
+    int count = 0;
 
     while (1) {
         if (number >
@@ -122,7 +148,7 @@ int binary_search(int array[], int size, int number)
                                      // минимальное и максимальное) и / 2
         } else if (number ==
                    array[mid_i]) { // Иначе если (число которрое мы ввели будет
-                                   // равно нашему центру) то
+            // равно нашему центру) то
             res = mid_i; // результат будет равен цент знач!
             break; // и сразу брейкаем
         } else {   // Иначе
@@ -136,6 +162,8 @@ int binary_search(int array[], int size, int number)
                                       // равно центру нашего массива то
             break; // брейкаем
         }
+        ++count;
     }
+    printf("Операции - %d\n", count);
     return res; // возвращаем наш рес
 }
