@@ -6,19 +6,50 @@ int main()
 {
 
     matrix_t neo;
-    neo = allocate_matrix(5, 5);
+    neo = allocate_matrix(2, 2);
 
-    matrix_t morfius;
-    morfius = allocate_matrix(5, 5);
+    // matrix_t morfius;
+    // morfius = allocate_matrix(3, 3);
 
-    // fill_matrix(&neo);
-    // print_matrix(&neo);
+    printf("1 - Матрица \n");
+    fill_matrix(&neo);
+    print_matrix(&neo);
+    printf("\n");
 
-    // fill_matrix(&morfius);
+    // morfius = minor(&neo, 2, 2);
     // print_matrix(&morfius);
 
-    printf("eq_matrix = %d\n", eq_size(&neo, &morfius));
+    // printf("2 - Матрица \n");
+    // fill_matrix(&morfius);
+    // print_matrix(&morfius);
+    // printf("\n");
+
+    // printf("eq_matrix = %d\n", eq_size(&neo, &morfius));
+
+    // printf("\n Сумма матриц \n");
+    // matrix_t fog = sum_matrix(&neo, &morfius);
+    // print_matrix(&fog);
+
+    // printf("\n Вычитание матриц \n");
+    // matrix_t subs = sub_matrix(&neo, &morfius);
+    // print_matrix(&subs);
+
+    // printf("\n Умножение матриц \n");
+    // matrix_t Mults = mult_number(&neo, 5);
+    // print_matrix(&Mults);
+
+    // printf("\n Переумножение \n");
+    // matrix_t Multi = multiplic(&neo, &morfius);
+    // print_matrix(&Multi);
+
+    // printf("\n Транспонированная матрица \n");
+    // matrix_t trans = transport(&neo);
+    // print_matrix(&trans);
+
+    // printf("\n Минор матрицы \n");
+    // matrix_t min = minor(&neo, 1, 1);
+    // print_matrix(&min);
 
     free_matrix(&neo);
-    free_matrix(&morfius);
+    // free_matrix(&morfius);
 }
