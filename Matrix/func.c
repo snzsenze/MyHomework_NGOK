@@ -32,9 +32,11 @@ matrix_t calc_complimentc(matrix_t *A)
             matrix_t tmp;
             for (int i = 0; i < neo.rows; ++i) {
                 for (int j = 0; j < neo.cols; ++j) {
-                    tmp = minor(&neo, i, j);
+                    //
+                    tmp = minor(A, i, j);
+                    //
                     neo.matrix[i][j] =
-                        pow(-1, (i + 1) + (j + 1) * detriminant(&tmp));
+                        pow(-1, (i + 1) + (j + 1)) * detriminant(&tmp);
                     free_matrix(&tmp);
                 }
             }
@@ -53,8 +55,8 @@ double detriminant(matrix_t *A)
             det = (A->matrix[0][0] * A->matrix[1][1]) -
                   (A->matrix[1][0] * A->matrix[0][1]);
         } else if (A->rows >= 3) {
-
-            for (int i = 1; i < A->cols; ++i) {
+            // 
+            for (int i = 1; i <= A->cols; ++i) {
                 matrix_t neo = minor(A, 0, i - 1);
                 det += pow(-1, 1 + (double)i) * A->matrix[0][i - 1] *
                        detriminant(&neo);
