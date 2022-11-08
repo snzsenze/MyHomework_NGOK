@@ -12,7 +12,10 @@ typedef struct {
 int eq_size(matrix_t *A, matrix_t *B);
 int eq_matrix(matrix_t *A, matrix_t *B);
 double detriminant(matrix_t *A);
+matrix_t minor(matrix_t *A, int ip, int jp);
 matrix_t transport(matrix_t *A);
+matrix_t calc_complimentc(matrix_t *A);
+matrix_t inverse_matrix(matrix_t *A);
 matrix_t multiplic(matrix_t *A, matrix_t *B);
 matrix_t sum_matrix(matrix_t *A, matrix_t *B);
 matrix_t sub_matrix(matrix_t *A, matrix_t *B);

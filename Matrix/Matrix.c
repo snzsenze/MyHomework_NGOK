@@ -6,7 +6,7 @@ int main()
 {
 
     matrix_t neo;
-    neo = allocate_matrix(2, 2);
+    neo = allocate_matrix(3, 3);
 
     // matrix_t morfius;
     // morfius = allocate_matrix(3, 3);
@@ -14,6 +14,25 @@ int main()
     printf("1 - Матрица \n");
     fill_matrix(&neo);
     print_matrix(&neo);
+    printf("\n");
+
+    matrix_t minr = minor(&neo, 2, 2);
+    print_matrix(&minr);
+    printf("\n");
+
+    printf("\n detriminant");
+    double detr = detriminant(&neo);
+    printf("%f", detr);
+    printf("\n");
+
+    printf("\ncalc_complimentc \n");
+    matrix_t calc_com = calc_complimentc(&neo);
+    print_matrix(&calc_com);
+    printf("\n");
+
+    printf("inverse_matrix \n");
+    matrix_t inver_matrix = inverse_matrix(&neo);
+    print_matrix(&inver_matrix);
     printf("\n");
 
     // morfius = minor(&neo, 2, 2);

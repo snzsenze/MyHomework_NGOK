@@ -9,7 +9,7 @@ valgrind:
 	@valgrind --leak-check=full --tool=memcheck ./Matrix
 
 Matrix:
-	@${CC} ${FLAGS} Matrix.c func.c -o Matrix
+	@${CC} ${FLAGS} Matrix.c func.c -o Matrix -lm
 
 clean:
 	@rm -rf *.out Matrix
