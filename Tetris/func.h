@@ -1,26 +1,27 @@
-#ifndef _FUNC_H
-#define _FUNC_H
-
-#define CUP_X 20
-#define CUP_Y 10
-#define FIGURE_X 4
-#define FIGURE_Y 2
+#ifndef _FUNC_H_
+#define _FUNC_H_
 
 typedef struct {
-    char **matrix;
-    int cup_x;
-    int cup_y;
+char **maincup;
+int cup_x;
+int cup_y;
 } cup_t;
 
 typedef struct {
-    int **matrix;
-    int figure_x;
-    int figure_y;
+int **figure;
+int figure_x;
+int figure_y;
 } figure_t;
 
-void menu();
-cup_t allocate_cup(const int cup_x, const int cup_y);
-void print_cup(cup_t *cup);
+cup_t create_cup(int cup_x, int cup_y);
+void print_cup(cup_t *matrix);
 void remove_cup(cup_t *cup);
 
-#endif // FUNC_H
+figure_t create_figure(int figure_x, int figure_y);
+void print_figure(figure_t *figure);
+void remove_figure(figure_t *figure);
+
+void fill_smashboy(figure_t *figure);
+void added_figure(cup_t *cup, figure_t *figure);
+void menu();
+#endif
