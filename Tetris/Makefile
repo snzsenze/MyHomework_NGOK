@@ -1,0 +1,20 @@
+CC = gcc
+FLAGS = -Wall -Werror -Wextra
+
+
+
+all: tetris
+
+valgrind:
+	@valgrind --leak-check=full --tool=memcheck ./tetris
+
+tetris:
+	@${CC} ${FLAGS} tetris.c func.c -o tetris 
+
+clean:
+	@rm -rf *.out tetris
+
+run:
+	@./tetris
+
+rebuild: clean tetris run
