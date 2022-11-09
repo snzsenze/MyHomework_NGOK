@@ -13,7 +13,7 @@ cup_t create_cup(int cup_x, int cup_y)
     }
     for (int i = 0; i < cup_x; ++i) {
         for (int j = 0; j < cup_y; ++j) {
-            cup.maincup[i][j] = '^';
+            cup.maincup[i][j] = ' ';
         }
     }
     return cup;
@@ -89,20 +89,20 @@ void fill_smashboy(figure_t *figure)
     figure->figure[3][1] = 5;
 }
 
-void menu()
-{
-    int result = 0;
-    while (result != 2) {
-        printf("1 - Начать игру\n");
-        printf("2 - Exit\n");
-        scanf("-%d-", &result);
-        setbuf(stdin, NULL);
-        switch (result) {
-        case 1:
-                
-            break;
-        default:
-            break;
-        }
-    }
-}
+// void menu()
+// {
+//     int result = 0;
+//     while (result != 2) {
+//         printf("1 - Начать игру\n");
+//         printf("2 - Exit\n");
+//         scanf("-%d-", &result);
+//         setbuf(stdin, NULL);
+//         switch (result) {
+//         case 1:
+
+//             break;
+//         default:
+//             break;
+//         }
+//     }
+// }

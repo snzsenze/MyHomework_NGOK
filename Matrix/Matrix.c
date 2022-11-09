@@ -20,7 +20,7 @@ int main()
     print_matrix(&minr);
     printf("\n");
 
-    printf("\n detriminant");
+    printf("\n detriminant\n");
     double detr = detriminant(&neo);
     printf("%f", detr);
     printf("\n");
