@@ -1,1 +1,0 @@
-![Image alt](https://github.com/snzsenze/MyHomework_NGOK/blob/main/tetris.jpg)
