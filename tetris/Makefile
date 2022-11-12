@@ -4,7 +4,7 @@ FLAGS = -Wall -Werror -Wextra
 all: tetris
 
 tetris:
-	@${CC} ${FLAGS} tetris.c func.c -o tetris -g
+	@${CC} ${FLAGS} main.c func.c -lncurses -g -o tetris
 
 valgrind:
 	@valgrind --leak-check=full --tool=memcheck ./tetris
