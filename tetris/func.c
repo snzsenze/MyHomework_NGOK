@@ -18,6 +18,7 @@ int analyzator(cup_t *cup, int up_dot, int down_dot)
         }
         if (count == 10) {
             max[k] = i;
+            printf("%ls", max);
             ++k;
             count = 0;
             res++;
