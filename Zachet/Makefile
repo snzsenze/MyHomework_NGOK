@@ -6,6 +6,9 @@ all: Array run
 Array:
 	@${CC} ${FLAGS} Array.c func.c -o Array
 
+valgrind:
+	@valgrind --leak-check=full --tool=memcheck ./Array
+
 clean:
 	@rm -rf *.out Array
 
