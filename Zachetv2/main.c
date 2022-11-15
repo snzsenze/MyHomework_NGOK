@@ -50,10 +50,6 @@ int main()
         }
     }
 
-
-  
-
-
     printf("-----Ваша-1-матрица-----\n");
     for (int i = 0; i < size_1; ++i) {
         for (int j = 0; j < size_2; ++j) {
