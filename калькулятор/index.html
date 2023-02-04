@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GAY</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        var res = "";
+        var tmp = "";
+
+        function naborchisel1() {
+            res = res + "1";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel2() {
+            res = res + "2";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel3() {
+            res = res + "3";
+            tmp = "";
+
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel4() {
+            res = res + "4";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel5() {
+            res = res + "5";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel6() {
+            res = res + "6";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel7() {
+            res = res + "7";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel8() {
+            res = res + "8";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel9() {
+            res = res + "9";
+            tmp = "";
+
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchisel0() {
+            res = res + "0";
+            tmp = "";
+            document.getElementById('nabor').value = res;
+
+        }
+
+        function naborchiselplus() {
+
+            if (tmp == "") {
+                tmp = "+";
+                res = res + tmp;
+                document.getElementById('nabor').value = res;
+            }
+        }
+
+
+            function naborchiselminus() {
+            if (tmp == "") {
+            tmp = "-";
+            res = res + tmp;
+            document.getElementById('nabor').value = res;
+            }
+        }
+
+
+            function naborchiselravno(){
+
+              
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="box">
+
+            <div class="box-res">
+
+                <input type="text" id="nabor" class="box-nabor">
+
+            </div>
+
+
+            <div class="box-input">
+
+                <div class = "line-1">
+                <button type="button" class="b1" onclick="naborchisel1()">1</button>
+                <button type="button" class="b2" onclick="naborchisel2()">2</button>
+                <button type="button" class="b3" onclick="naborchisel3()">3</button>
+                <button type="button" class="b4" onclick="naborchisel4()">4</button>
+                </div>
+
+                <div class = "line-2">
+                <button type="button" class="b5" onclick="naborchisel5()">5</button>
+                <button type="button" class="b6" onclick="naborchisel6()">6</button>
+                <button type="button" class="b7" onclick="naborchisel7()">7</button>
+                <button type="button" class="b8" onclick="naborchisel8()">8</button>
+                </div>
+
+                <div class = "line-3">
+                <button type="button" class="b9" onclick="naborchisel9()">9</button>
+                <button type="button" class="b0" onclick="naborchisel0()">0</button>
+                <button type="button" class="plus" onclick=" naborchiselplus()">+</button>
+                <button type="button" class="minus" onclick=" naborchiselminus()">-</button>
+                </div>
+
+                <div class = "line-last">
+                <button type="button" class="bres"  onclick=" naborchiselravno()">=</button>
+             </div>
+
+
+
+            </div>
+
+
+        </div>
+
+    </header>
+</body>
+
+</html>

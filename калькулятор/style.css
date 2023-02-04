@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+
+}
+
+.box{
+    width: 400px;
+    height: auto;
+    /* background-color: aqua; */
+}
+
+
+
+.box-res{
+    width: 400px;
+    height: 200px;
+    background-color: whitesmoke;
+
+}
+
+.box-nabor{
+    
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    margin: 20px;
+    font-size: 20px;
+    /* background-color: transparent; */
+    background-color: white;
+    border: 0px;
+    
+}
+
+.box-input{
+    /* display: inline-flex; */
+    margin: auto;
+    width: 400px;
+    height: 600px;
+    background-color: whitesmoke;
+}
+
+.line-1{
+    width: 400px;
+    height: 100px;
+    display: flex;
+}
+
+.line-2{
+    width: 400px;
+    height: 100px;
+    display: flex;
+
+}
+
+.line-3{
+    width: 400px;
+    height: 100px;
+    display: flex;
+
+}
+
+
+
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8 ,.b9, .b0, .plus ,.minus{
+
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    border: solid 1px;
+    border-color: gray;
+}
+
+.bres{
+    margin: 200px 0px 0px 0px;
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    border: 0px;
+    border: solid 1px;
+    border-color: gray
+}
+
+.line-last{
+    width: 400px;
+    height: 100px;
+    display: flex;
+}
+
+.b1:active, .b2:active, .b3:active, .b4:active, .b5:active, .b6:active, .b7:active, .b8:active ,.b9:active{
+    transition: 0.25s;
+    background-color: gray;
+}
+
